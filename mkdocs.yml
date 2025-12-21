@@ -10,6 +10,7 @@ nav:
       - Machine Learning: notes/ML/index.md
       - Deep Learning: notes/DL/index.md
       - Generative AI: notes/GenAI/index.md
+      - Cloud : notes/Cloud/index.md
   - Projects: projects/index.md
   - Blogs: blogs/index.md
   - Resume: resume.md
