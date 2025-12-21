@@ -1,0 +1,15 @@
+site_name: Debasis Panda | Data Scientist
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Notes:
+      - Machine Learning: notes/ML/index.md
+      - Deep Learning: notes/DL/index.md
+      - Generative AI: notes/GenAI/index.md
+  - Projects: projects/index.md
+  - Blogs: blogs/index.md
+  - Resume: resume.md
