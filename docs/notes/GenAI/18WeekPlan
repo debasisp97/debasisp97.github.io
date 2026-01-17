@@ -1,0 +1,511 @@
+
+# 18 weeks Plan for AI upskilling
+
+---
+
+# 🧭 How to Read This Plan
+
+Each week includes:
+
+* **What you learn (concepts)**
+* **What you build (hands-on)**
+* **Tools & frameworks**
+* **Professional outcome** (what skill you can claim in interviews)
+
+Assumption:
+
+* You already know ML, DL basics, Python, SQL
+* You can code comfortably
+
+Time commitment:
+
+* ~8–10 hrs/week (more if you go deep)
+
+---
+
+# 🔵 PHASE 1 — FOUNDATIONS (Weeks 1–4)
+
+> Goal: Stop thinking like “ML with text” and start thinking like “LLM systems engineer”
+
+---
+
+## 🟦 Week 1 — What GenAI & LLMs Really Are
+
+### Learn
+
+* What GenAI is (vs ML/DL)
+* Tokenization (BPE, SentencePiece)
+* Next-token prediction
+* Why LLMs hallucinate
+* Parametric vs non-parametric knowledge
+* Context window vs memory vs RAG
+
+### Do
+
+* Tokenize text using different tokenizers
+* Inspect token counts & cost implications
+* Generate text with temperature/top-p changes
+
+### Tools
+
+* OpenAI / Anthropic APIs
+* HuggingFace tokenizer
+
+### Outcome
+
+> You can **explain LLM behavior, limitations, and failure modes** clearly in interviews.
+
+---
+
+## 🟦 Week 2 — Transformers Deep Dive (Interview-Critical)
+
+### Learn
+
+* Attention, self-attention
+* QKV mechanics
+* Encoder vs Decoder
+* Why scaling works
+* Positional encoding
+* Inference vs training
+
+### Do
+
+* Walk through transformer forward pass
+* Inspect attention weights
+* Explain how context length affects performance
+
+### Tools
+
+* PyTorch
+* HuggingFace Transformers
+
+### Outcome
+
+> You can **whiteboard a transformer** and explain it without hand-waving.
+
+---
+
+## 🟦 Week 3 — Embeddings & Latent Space (Core to RAG)
+
+### Learn
+
+* Latent space intuition
+* Embeddings vs features
+* Cosine similarity vs dot product
+* Semantic similarity
+* Embedding drift
+
+### Do
+
+* Create embeddings
+* Cluster text
+* Perform semantic search
+* Visualize embedding space
+
+### Tools
+
+* OpenAI / SentenceTransformers
+* FAISS
+
+### Outcome
+
+> You understand **why RAG works geometrically**, not magically.
+
+---
+
+## 🟦 Week 4 — Prompt Engineering (Professionally)
+
+### Learn
+
+* Prompting as programming
+* Zero-shot, few-shot
+* Chain-of-thought
+* ReAct
+* Structured outputs
+* Prompt injection risks
+
+### Do
+
+* Prompt debugging
+* JSON-constrained outputs
+* Prompt versioning experiments
+
+### Tools
+
+* Promptfoo
+* LangSmith (optional)
+
+### Outcome
+
+> You can **design stable, testable prompts**, not just clever ones.
+
+---
+
+# 🟢 PHASE 2 — RAG SYSTEMS (Weeks 5–8)
+
+> Goal: Become **employable** for GenAI roles
+
+---
+
+## 🟩 Week 5 — RAG Architecture (Core Skill)
+
+### Learn
+
+* Why RAG exists
+* RAG components
+* Offline vs online steps
+* Chunking strategies
+
+### Do
+
+* Build basic RAG pipeline
+* PDF → chunks → embeddings → retrieval → answer
+
+### Tools
+
+* LangChain or LlamaIndex
+* FAISS / Chroma
+
+### Outcome
+
+> You can **build a working RAG system end-to-end**.
+
+---
+
+## 🟩 Week 6 — Advanced RAG (Where Most Fail)
+
+### Learn
+
+* Chunk size tradeoffs
+* Metadata filtering
+* Hybrid search
+* Multi-query retrieval
+* Re-ranking
+
+### Do
+
+* Improve retrieval accuracy
+* Compare chunking strategies
+* Reduce hallucination
+
+### Tools
+
+* BM25 + vector search
+* Cross-encoders
+
+### Outcome
+
+> You know **why RAG fails and how to fix it**.
+
+---
+
+## 🟩 Week 7 — RAG Evaluation & Guardrails
+
+### Learn
+
+* Faithfulness
+* Relevance
+* Context precision/recall
+* Hallucination metrics
+* Prompt injection attacks
+
+### Do
+
+* Evaluate RAG with automated metrics
+* Add safety prompts & filters
+
+### Tools
+
+* RAGAS
+* TruLens
+
+### Outcome
+
+> You can **defend RAG quality quantitatively** in interviews.
+
+---
+
+## 🟩 Week 8 — Production RAG Design
+
+### Learn
+
+* Cost optimization
+* Caching embeddings
+* Latency reduction
+* Access control
+* Multi-tenant RAG
+
+### Do
+
+* Add caching
+* Estimate token cost
+* Design enterprise-ready RAG
+
+### Tools
+
+* Redis
+* Azure AI Search / Pinecone
+
+### Outcome
+
+> You can **design RAG systems for real companies**, not demos.
+
+---
+
+# 🟠 PHASE 3 — MODEL ADAPTATION (Weeks 9–11)
+
+> Goal: Know when and how to tune models (and when NOT to)
+
+---
+
+## 🟧 Week 9 — Fine-Tuning Fundamentals
+
+### Learn
+
+* Full fine-tuning vs PEFT
+* Instruction tuning
+* RLHF basics
+* When fine-tuning is a bad idea
+
+### Do
+
+* Prepare fine-tuning datasets
+* Analyze domain mismatch
+
+### Tools
+
+* HuggingFace Trainer
+
+### Outcome
+
+> You can **justify tuning decisions intelligently**.
+
+---
+
+## 🟧 Week 10 — LoRA, QLoRA, Adapters (Must-Know)
+
+### Learn
+
+* LoRA mechanics
+* QLoRA + quantization
+* Adapters vs LoRA
+* Memory vs performance tradeoffs
+
+### Do
+
+* Fine-tune a small model with LoRA
+* Compare base vs tuned outputs
+
+### Tools
+
+* PEFT
+* bitsandbytes
+
+### Outcome
+
+> You can **fine-tune large models on limited hardware**.
+
+---
+
+## 🟧 Week 11 — RAG vs Fine-Tuning (Decision Framework)
+
+### Learn
+
+* Knowledge vs behavior adaptation
+* Data freshness
+* Cost comparison
+* Maintenance burden
+
+### Do
+
+* Compare RAG-only vs LoRA-only vs hybrid
+
+### Outcome
+
+> You can **answer “Should we fine-tune?” like a senior engineer**.
+
+---
+
+# 🔴 PHASE 4 — AGENTS & AGENTIC SYSTEMS (Weeks 12–15)
+
+> Goal: Move from chatbots → autonomous systems
+
+---
+
+## 🟥 Week 12 — What AI Agents Really Are
+
+### Learn
+
+* Agent definition
+* ReAct
+* Planner–executor
+* Tool use
+* Memory types
+
+### Do
+
+* Build tool-using agent (SQL / Python)
+
+### Tools
+
+* LangChain
+* OpenAI function calling
+
+### Outcome
+
+> You understand **agents as systems, not hype**.
+
+---
+
+## 🟥 Week 13 — Multi-Agent & Workflows
+
+### Learn
+
+* Multi-agent collaboration
+* Role separation
+* Failure handling
+
+### Do
+
+* Build research agent
+* Build data-analysis agent
+
+### Tools
+
+* LangGraph
+* CrewAI / AutoGen
+
+### Outcome
+
+> You can **design agent workflows reliably**.
+
+---
+
+## 🟥 Week 14 — Memory in Agents
+
+### Learn
+
+* Short-term vs long-term memory
+* Episodic memory
+* Vector memory
+* Personalization
+
+### Do
+
+* Add memory to agent
+* Avoid memory poisoning
+
+### Outcome
+
+> You can **separate RAG, memory, and reasoning correctly**.
+
+---
+
+## 🟥 Week 15 — Agent Evaluation & Safety
+
+### Learn
+
+* Agent failure modes
+* Infinite loops
+* Cost explosion
+* Guardrails for agents
+
+### Do
+
+* Add monitoring
+* Add step limits
+* Add fallback logic
+
+### Outcome
+
+> You can **ship safe agentic systems**.
+
+---
+
+# 🟣 PHASE 5 — GENAI OPS & PORTFOLIO (Weeks 16–18)
+
+> Goal: Be job-ready, interview-ready, production-ready
+
+---
+
+## 🟪 Week 16 — LLMOps / GenAIOps
+
+### Learn
+
+* Prompt versioning
+* Model routing
+* A/B testing
+* Observability
+
+### Tools
+
+* LangSmith
+* Azure Prompt Flow
+
+### Outcome
+
+> You understand **GenAI lifecycle management**.
+
+---
+
+## 🟪 Week 17 — Cloud & Deployment
+
+### Learn
+
+* Azure OpenAI
+* Security
+* Rate limiting
+* Cost control
+
+### Do
+
+* Deploy RAG app
+* Add auth & logging
+
+### Outcome
+
+> You can **deploy enterprise-grade GenAI apps**.
+
+---
+
+## 🟪 Week 18 — Portfolio & Interview Prep
+
+### Build (Must)
+
+1. RAG chatbot (enterprise docs)
+2. SQL agent
+3. Multi-agent system
+4. Evaluation dashboard
+
+### Prepare
+
+* System design answers
+* Tradeoff explanations
+* Failure stories
+
+### Outcome
+
+> You are **ready for DS / ML / GenAI roles globally**.
+
+---
+
+# 🎯 Final Truth (Very Important)
+
+If you complete this plan:
+
+* You are **NOT a “prompt engineer”**
+* You are a **GenAI / LLM Systems Engineer**
+* You can work in **DS, ML, AI, GenAI, Agent roles**
+
+This roadmap is **industry-aligned, future-proof, and senior-ready**.
+
+---
+
+## Next Step (Choose One)
+
+1️⃣ Convert this into **daily tasks**
+2️⃣ Map this to **job descriptions you’re targeting**
+3️⃣ Create **GitHub repo structure + project ideas**
+4️⃣ Do **mock interview questions per phase**
+
+Tell me what you want next, and we’ll execute.
