@@ -114,7 +114,8 @@ Examples:
 ---
 
 # 3️⃣ Semi-Supervised Learning
-(Link 1)[https://freedium-mirror.cfd/https://medium.com/data-science/supervised-semi-supervised-unsupervised-and-self-supervised-learning-7fa79aa9247c] and (Link2)[https://freedium-mirror.cfd/https://medium.com/unlocking-ai/semi-supervised-vs-self-supervised-learning-b2ac070eee50]
+(Link 1)[https://freedium-mirror.cfd/https://medium.com/data-science/supervised-semi-supervised-unsupervised-and-self-supervised-learning-7fa79aa9247c] 
+(Link2)[https://freedium-mirror.cfd/https://medium.com/unlocking-ai/semi-supervised-vs-self-supervised-learning-b2ac070eee50]
 > Small labeled data + large unlabeled data
 
 ---
