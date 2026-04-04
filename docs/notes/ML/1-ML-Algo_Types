@@ -1,5 +1,5 @@
 Great — before we go deeper into specific algorithms, let’s make sure your **mental map of ML is clean and structured**.
-I’ll organize this like a **senior DS would think**, not just textbook categories. [link](https://ifoadatascienceresearch.github.io/tutorial/comparison/)
+I’ll organize this like a **senior DS would think**, not just textbook categories. ![link](https://ifoadatascienceresearch.github.io/tutorial/comparison/)
 
 ---
 
@@ -114,7 +114,7 @@ Examples:
 ---
 
 # 3️⃣ Semi-Supervised Learning
-(Link 1)[https://freedium-mirror.cfd/https://medium.com/data-science/supervised-semi-supervised-unsupervised-and-self-supervised-learning-7fa79aa9247c] and (Link2)[https://freedium-mirror.cfd/https://medium.com/unlocking-ai/semi-supervised-vs-self-supervised-learning-b2ac070eee50]
+!(Link 1)[https://freedium-mirror.cfd/https://medium.com/data-science/supervised-semi-supervised-unsupervised-and-self-supervised-learning-7fa79aa9247c] and !(Link2)[https://freedium-mirror.cfd/https://medium.com/unlocking-ai/semi-supervised-vs-self-supervised-learning-b2ac070eee50]
 > Small labeled data + large unlabeled data
 
 ---
@@ -161,7 +161,7 @@ Examples:
 
 # 5️⃣ Self-Supervised Learning (Modern but important conceptually) 
 
-(link)[https://wandb.ai/mostafaibrahim17/ml-articles/reports/Breaking-Down-Self-Supervised-Learning-Concepts-Comparisons-and-Examples--Vmlldzo2MzgwNjIx#what-is-self-supervised-learning?]
+!(link)[https://wandb.ai/mostafaibrahim17/ml-articles/reports/Breaking-Down-Self-Supervised-Learning-Concepts-Comparisons-and-Examples--Vmlldzo2MzgwNjIx#what-is-self-supervised-learning?]
 
 
 > Labels are **created from the data itself**
@@ -228,7 +228,7 @@ Algorithms:
 ---
 
 # 8️⃣ Generative vs Discriminative Models
-(link)[https://www.datacamp.com/blog/generative-vs-discriminative-models]
+!(link)[https://www.datacamp.com/blog/generative-vs-discriminative-models]
 ---
 
 ### Generative
